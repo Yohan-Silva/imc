@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/muscle.png">
+    <title>IMC</title>
+</head>
+
+<body>
+    <header>
+        <h1>IMC</h1>
+        <h2>(Indice de massa morporal)</h2>
+    </header>
+
+    <div class="hud">
+        <label for="Peso">Peso(kg)</label>
+        <input type="number" id="peso" name="peso">
+
+        <label for="Altura">Altura(m,cm)</label>
+        <input type="number" id="altura" name="altura">
+
+        <br>
+        <br>
+
+        <button onclick="calcularimc()">Calcular</button>
+
+        <br>
+
+        <p>Seu indice de massa corporal é: <span id="resultado"></span></p>
+    </div>
+
+    <script>
+        function calcularimc() {
+            const peso = document.getElementById("peso").value;
+
+            const altura = document.getElementById("altura").value;
+
+            const imc = peso / (altura) ** 2;
+
+            document.getElementById("resultado").textContent = imc.toFixed(2);
+        }
+    </script>
+
+    <footer>Designed by: Yohan Reichert da Silva &copy;</footer>
+
+</body>
+
+</html>

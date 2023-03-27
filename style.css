@@ -1,0 +1,32 @@
+body {
+    background-image: url(img/arnold.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+
+header {
+    text-align: center;
+    background-color: rgba(155, 155, 155, 0.7);
+    border: 5px solid #252525;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.hud {
+    text-align: center;
+    background-color: rgba(155, 155, 155, 0.7);
+    border: 5px solid #252525;
+}
+
+footer {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    background-color: rgba(155, 155, 155, 0.7);
+    border: 2px solid #252525;
+}
